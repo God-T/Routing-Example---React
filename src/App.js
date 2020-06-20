@@ -22,7 +22,7 @@ class App extends Component {
               path="/products"
               render={(props) => <Products someProp="someProp" {...props} />}
             />
-            <Route path="/posts/:year/:month" component={Posts} />
+            <Route path="/posts/:year?/:month?" component={Posts} />
             <Route path="/admin" component={Dashboard} />
             <Route path="/" component={Home} />
             {/* <Route path="/" exact component={Home} /> */}
