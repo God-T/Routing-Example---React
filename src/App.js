@@ -27,7 +27,7 @@ class App extends Component {
             <Route path="/admin" component={Dashboard} />
             <Route path="/not-found" component={NotFound} />
             <Route path="/" exact component={Home} />
-            <Redirect to="/not-found" />
+            <Redirect to="/" />
           </Switch>
         </div>
       </div>
