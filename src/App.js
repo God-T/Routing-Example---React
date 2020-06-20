@@ -7,7 +7,7 @@ import Dashboard from "./components/admin/dashboard";
 import ProductDetails from "./components/productDetails";
 import NotFound from "./components/notFound";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -23,9 +23,11 @@ class App extends Component {
               render={(props) => <Products someProp="someProp" {...props} />}
             />
             <Route path="/posts/:year?/:month?" component={Posts} />
+            <Redirect from="/postings" to="/posts" />
             <Route path="/admin" component={Dashboard} />
-            <Route path="/" component={Home} />
-            {/* <Route path="/" exact component={Home} /> */}
+            <Route path="/not-found" component={NotFound} />
+            <Route path="/" exact component={Home} />
+            <Redirect to="/not-found" />
           </Switch>
         </div>
       </div>
