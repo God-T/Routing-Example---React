@@ -5,16 +5,16 @@ const NavBar = () => {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/Routing-Example-React/Routing-Example-React/">Home</Link>
       </li>
       <li>
-        <Link to="/products">Products</Link>
+        <Link to="/Routing-Example-React/products">Products</Link>
       </li>
       <li>
-        <Link to="/posts/2018/06">Posts</Link>
+        <Link to="/Routing-Example-React/posts/2018/06">Posts</Link>
       </li>
       <li>
-        <Link to="/admin">Admin</Link>
+        <Link to="/Routing-Example-React/admin">Admin</Link>
       </li>
     </ul>
   );

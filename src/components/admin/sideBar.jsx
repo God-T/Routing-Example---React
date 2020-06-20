@@ -6,10 +6,10 @@ const SideBar = () => {
   return (
     <ul>
       <li>
-        <Link to="/admin/posts">Posts</Link>
+        <Link to="/Routing-Example-React/admin/posts">Posts</Link>
       </li>
       <li>
-        <Link to="/admin/users">Users</Link>
+        <Link to="/Routing-Example-React/admin/users">Users</Link>
       </li>
     </ul>
   );
